@@ -2,9 +2,7 @@
 
 [Tiếng Việt](README.vi.md)
 
-[Download the installable KOReader plugin ZIP](https://github.com/mkdayyyy/kindle-eink-contrast/releases/download/v0.3.2-preview/kindle-eink-contrast-v0.3.2-preview-plugin.zip)
-
-The ZIP above is v0.3.2-preview. The source on `main` adds Kindle Scribe (2022 and 2024) and a 20°C preset. The contributor tested on a Scribe (2024).
+[Download the installable KOReader plugin ZIP](https://github.com/mkdayyyy/kindle-eink-contrast/releases/download/v0.3.3-preview/kindle-eink-contrast-v0.3.3-preview-plugin.zip)
 
 A KOReader plugin for Kindle screens where text looks very faint, as if a layer of fog were covering the page, and remnants of the previous page remain visible after turning it. That lingering text is called **E Ink ghosting**.
 
@@ -32,7 +30,7 @@ Each pair shows the same view on the same device. The original photos are displa
 
 1. Exit KOReader and extract the plugin ZIP linked above. Copy `kindle-eink-contrast.koplugin` to `koreader/plugins/` on the Kindle. If you installed an earlier preview, remove `kindle-eink-temperature.koplugin` or `ppw5einktemp.koplugin` before reopening KOReader.
 2. Reopen KOReader, open a book and go to **Settings → Screen → Kindle E Ink Contrast**. The menu is in English.
-3. Select **Hold 15°C while reading**, **Hold 10°C while reading**, **Hold 5°C while reading** or **Hold 0°C while reading**. Turn a page and compare the contrast and any remaining ghosting against Auto. Select **Restore Auto** to return to the default.
+3. Select a temperature to hold while reading (20°C, 15°C, 10°C, 5°C or 0°C). Turn a page and compare the contrast and any remaining ghosting against Auto. Select **Restore Auto** to return to the default.
 
 The plugin restores Auto when you close a book or put the Kindle to sleep, then reapplies your choice when you resume reading in the same KOReader session. When you quit and reopen KOReader, select the preset again if you want to use it.
 
@@ -46,7 +44,7 @@ If KOReader stops responding or cannot restore Auto, restart the Kindle. To unin
 | Paperwhite 1–3, Voyage, Oasis 1, Kindle Basic (2014 and 2016) | NXP i.MX EPDC |
 | Paperwhite 4, Oasis 2 and 3, Kindle Basic (2019) | NXP i.MX EPDC with the Zelda or Rex request layout |
 
-The menu appears when the Kindle model, framebuffer driver name and request structure match. If you report how it works on another device, include your Kindle model, firmware, KOReader version, and which preset you tried.
+The menu appears when the Kindle model, framebuffer driver name and request structure match. The contributor tested Scribe support on a 2024 model. If you report how it works on another device, include your Kindle model, firmware, KOReader version, and which preset you tried.
 
 ## How it works
 
