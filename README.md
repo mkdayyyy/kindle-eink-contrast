@@ -2,6 +2,8 @@
 
 [Tiếng Việt](README.vi.md)
 
+[Download the installable KOReader plugin ZIP](https://github.com/mkdayyyy/kindle-eink-contrast/releases/download/v0.3.2-preview/kindle-eink-contrast-v0.3.2-preview-plugin.zip)
+
 A KOReader plugin for Kindle screens where text looks very faint, as if a layer of fog were covering the page, and remnants of the previous page remain visible after turning it. That lingering text is called **E Ink ghosting**.
 
 The plugin tells the display driver to use a lower temperature when refreshing the screen. That can select a different built-in waveform, the sequence of pulses that moves the E Ink particles. The goal is **darker text and fewer afterimages**.
@@ -26,7 +28,7 @@ Each pair shows the same view on the same device. The original photos are displa
 
 ## Install and use
 
-1. Exit KOReader. Copy `kindle-eink-contrast.koplugin` to `koreader/plugins/` on the Kindle. If you installed an earlier preview, remove `kindle-eink-temperature.koplugin` or `ppw5einktemp.koplugin` before reopening KOReader.
+1. Exit KOReader and extract the plugin ZIP linked above. Copy `kindle-eink-contrast.koplugin` to `koreader/plugins/` on the Kindle. If you installed an earlier preview, remove `kindle-eink-temperature.koplugin` or `ppw5einktemp.koplugin` before reopening KOReader.
 2. Reopen KOReader, open a book and go to **Settings → Screen → Kindle E Ink Contrast**. The menu is in English.
 3. Select **Hold 15°C while reading**, **Hold 10°C while reading**, **Hold 5°C while reading** or **Hold 0°C while reading**. Turn a page and compare the contrast and any remaining ghosting against Auto. Select **Restore Auto** to return to the default.
 
