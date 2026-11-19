@@ -4,6 +4,8 @@
 
 [Tải ZIP cài đặt plugin KOReader](https://github.com/mkdayyyy/kindle-eink-contrast/releases/download/v0.3.2-preview/kindle-eink-contrast-v0.3.2-preview-plugin.zip)
 
+File ZIP ở trên là bản v0.3.2-preview. Mã nguồn trên nhánh `main` bổ sung Kindle Scribe (2022 và 2024) và mức 20°C. Người đóng góp đã thử trên Scribe (2024).
+
 Plugin dành cho Kindle có chữ rất nhạt, nhìn như có lớp sương phủ lên trang, và vẫn thấy bóng chữ của trang trước sau khi lật trang. Hiện tượng bóng chữ còn sót lại gọi là **lưu ảnh E Ink** (*ghosting*).
 
 Plugin gửi một giá trị nhiệt độ thấp hơn cho driver màn hình để máy có thể chọn dạng sóng làm mới khác trong bảng có sẵn. Dạng sóng là chuỗi xung dùng để di chuyển hạt mực E Ink. Mục đích là **làm chữ đậm hơn và giảm bóng chữ**.

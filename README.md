@@ -4,6 +4,8 @@
 
 [Download the installable KOReader plugin ZIP](https://github.com/mkdayyyy/kindle-eink-contrast/releases/download/v0.3.2-preview/kindle-eink-contrast-v0.3.2-preview-plugin.zip)
 
+The ZIP above is v0.3.2-preview. The source on `main` adds Kindle Scribe (2022 and 2024) and a 20°C preset. The contributor tested on a Scribe (2024).
+
 A KOReader plugin for Kindle screens where text looks very faint, as if a layer of fog were covering the page, and remnants of the previous page remain visible after turning it. That lingering text is called **E Ink ghosting**.
 
 The plugin tells the display driver to use a lower temperature when refreshing the screen. That can select a different built-in waveform, the sequence of pulses that moves the E Ink particles. The goal is **darker text and fewer afterimages**.
