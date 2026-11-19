@@ -18,6 +18,8 @@ local mtk_models = {
     KindlePaperWhite6 = true,
     KindleBasic4 = true,
     KindleBasic5 = true,
+    -- KOReader reports both the Scribe (2022) and the Scribe (2024) as KindleScribe.
+    KindleScribe = true,
 }
 local epdc_layout = epdc_layouts[Device.model]
 if not epdc_layout and not mtk_models[Device.model] then
@@ -62,7 +64,7 @@ function TemperaturePlugin:init()
         assert(C.ioctl(self.fd, C.FBIOGET_FSCREENINFO, screen_info) == 0)
         self.driver = ffi.string(screen_info[0].id, 16):match("^[^%z]*")
         if epdc_layout then
-            assert(self.driver == "mxc_epdc_fb" or self.driver == "mxc_epdc_v2_fb", "unexpected EPDC driver")
+            assert(self.driver == "mxc_epdc_fb" or self.driver == "mxc_epdc_v2_fb", "unexpected EPDC driver: " .. tostring(self.driver))
             local update = Device.screen.update_data
             assert(update and ffi.istype(epdc_layout, update), "unexpected EPDC update structure")
             local default = update.temp
@@ -71,7 +73,7 @@ function TemperaturePlugin:init()
             self.ambient_temperature = default
             return
         end
-        assert(self.driver == "hwtcon" or self.driver == "hwtcon_v2", "unexpected HWTCON driver")
+        assert(self.driver == "hwtcon" or self.driver == "hwtcon_v2", "unexpected HWTCON driver: " .. tostring(self.driver))
         assert(ffi.istype("struct mxcfb_update_data_mtk", Device.screen.update_data), "unexpected MTK update structure")
         self.panel_info = ffi.new("struct mxcfb_panel_info[1]")
         self.temperature = ffi.new("int32_t[1]")
@@ -260,6 +262,7 @@ function TemperaturePlugin:addToMainMenu(menu_items)
         text = "Kindle E Ink Contrast",
         sorting_hint = "screen",
         sub_item_table = {
+            holdItem(20),
             holdItem(15),
             holdItem(10),
             holdItem(5),

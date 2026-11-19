@@ -40,7 +40,7 @@ If KOReader stops responding or cannot restore Auto, restart the Kindle. To unin
 
 | Models | Driver |
 | --- | --- |
-| Paperwhite 5, Paperwhite 5 Signature Edition, Paperwhite 6, Kindle Basic (2022 and 2024) | MediaTek HWTCON or HWTCON v2 |
+| Paperwhite 5, Paperwhite 5 Signature Edition, Paperwhite 6, Kindle Basic (2022 and 2024), Kindle Scribe (2022 and 2024) | MediaTek HWTCON or HWTCON v2 |
 | Paperwhite 1–3, Voyage, Oasis 1, Kindle Basic (2014 and 2016) | NXP i.MX EPDC |
 | Paperwhite 4, Oasis 2 and 3, Kindle Basic (2019) | NXP i.MX EPDC with the Zelda or Rex request layout |
 
