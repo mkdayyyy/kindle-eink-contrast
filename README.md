@@ -8,6 +8,22 @@ The plugin tells the display driver to use a lower temperature when refreshing t
 
 **Observed on a Paperwhite 5:** At the default setting, text was very pale and traces from previous pages remained visible. At **10°C**, text looked darker and sharper, and the reader no longer saw ghosting during use. Page turns took longer and the screen flashed for longer. Results depend on the panel, firmware and temperature preset.
 
+## Before and after on Kindle Paperwhite 5
+
+Each pair shows the same view on the same device. The original photos are displayed at the same width, with slight differences in camera framing.
+
+### Same book page
+
+| Before | After enabling the plugin |
+| :---: | :---: |
+| <img src="docs/images/ppw5-reading-before.jpg" width="360" alt="Paperwhite 5 book page with faint menu text over the page"> | <img src="docs/images/ppw5-reading-after.jpg" width="360" alt="The same book page with darker text and less visible ghosting"> |
+
+### Same KOReader menu
+
+| Before | After enabling the plugin |
+| :---: | :---: |
+| <img src="docs/images/ppw5-menu-before.jpg" width="360" alt="KOReader menu on Paperwhite 5 with ghosted text from the book behind it"> | <img src="docs/images/ppw5-menu-after.jpg" width="360" alt="The same KOReader menu with much less text showing through"> |
+
 ## Install and use
 
 1. Exit KOReader. Copy `kindle-eink-contrast.koplugin` to `koreader/plugins/` on the Kindle. If you installed an earlier preview, remove `kindle-eink-temperature.koplugin` or `ppw5einktemp.koplugin` before reopening KOReader.

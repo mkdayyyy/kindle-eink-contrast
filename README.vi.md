@@ -8,6 +8,22 @@ Plugin gửi một giá trị nhiệt độ thấp hơn cho driver màn hình đ
 
 **Kết quả trên một máy Paperwhite 5:** Ở chế độ mặc định, chữ rất nhạt và còn bóng trang trước. Khi đặt **10°C**, người dùng thấy chữ đậm và rõ hơn, không còn thấy bóng chữ khi đọc. Đổi lại, lật trang chậm hơn và màn nháy lâu hơn. Hiệu quả tùy vào tấm màn, firmware và mức nhiệt đã chọn.
 
+## So sánh trước và sau trên Kindle Paperwhite 5
+
+Mỗi cặp chụp cùng một nội dung trên cùng một máy. Ảnh gốc được hiển thị cùng chiều rộng, góc chụp có chênh lệch nhẹ.
+
+### Cùng một trang sách
+
+| Trước | Sau khi bật plugin |
+| :---: | :---: |
+| <img src="docs/images/ppw5-reading-before.jpg" width="360" alt="Trang sách trên Paperwhite 5 còn bóng chữ của menu phủ lên trang"> | <img src="docs/images/ppw5-reading-after.jpg" width="360" alt="Cùng một trang sách với chữ đậm hơn và ít bóng chữ hơn"> |
+
+### Cùng một menu KOReader
+
+| Trước | Sau khi bật plugin |
+| :---: | :---: |
+| <img src="docs/images/ppw5-menu-before.jpg" width="360" alt="Menu KOReader trên Paperwhite 5 còn in rõ bóng chữ trang sách bên dưới"> | <img src="docs/images/ppw5-menu-after.jpg" width="360" alt="Cùng một menu KOReader với bóng chữ mờ đi rõ rệt"> |
+
 ## Cài đặt và sử dụng
 
 1. Thoát KOReader. Chép `kindle-eink-contrast.koplugin` vào `koreader/plugins/` trên Kindle. Nếu đã cài bản cũ, xóa thư mục `kindle-eink-temperature.koplugin` hoặc `ppw5einktemp.koplugin` trước khi mở lại KOReader.
