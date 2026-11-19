@@ -34,7 +34,7 @@ local logger = require("logger")
 local C = ffi.C
 local hold_temperature
 
-local TemperaturePlugin = WidgetContainer:extend{ name = "kindle-eink-temperature" }
+local TemperaturePlugin = WidgetContainer:extend{ name = "kindle-eink-contrast" }
 
 local function showMessage(message, timeout)
     UIManager:show(InfoMessage:new{ text = message, timeout = timeout })
@@ -81,7 +81,7 @@ function TemperaturePlugin:init()
         self.ambient_temperature = C.TEMP_USE_AMBIENT
     end)
     if not supported then
-        logger.warn("Kindle E Ink Temperature: unsupported framebuffer", Device.model, err)
+        logger.warn("Kindle E Ink Contrast: unsupported framebuffer", Device.model, err)
         return
     end
     self.ui.menu:registerToMainMenu(self)
@@ -164,7 +164,7 @@ function TemperaturePlugin:restoreAuto(force)
     if ok then
         self.active_temperature = nil
     else
-        logger.warn("Kindle E Ink Temperature: failed to restore Auto", err)
+        logger.warn("Kindle E Ink Contrast: failed to restore Auto", err)
     end
     return ok, err
 end
@@ -221,7 +221,7 @@ function TemperaturePlugin:setTemperature(value, quiet)
     end
 
     local after_label = describeTemperature(after)
-    logger.info("Kindle E Ink Temperature:", Device.model, self.driver, describeTemperature(before), after_label)
+    logger.info("Kindle E Ink Contrast:", Device.model, self.driver, describeTemperature(before), after_label)
     self.holding = true
     hold_temperature = value
     if self.driver == "hwtcon" then
@@ -256,8 +256,8 @@ function TemperaturePlugin:addToMainMenu(menu_items)
             callback = function() self:setTemperature(value) end,
         }
     end
-    menu_items.kindle_eink_temperature = {
-        text = "Kindle E Ink Temperature",
+    menu_items.kindle_eink_contrast = {
+        text = "Kindle E Ink Contrast",
         sorting_hint = "screen",
         sub_item_table = {
             holdItem(15),

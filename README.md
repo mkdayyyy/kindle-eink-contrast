@@ -1,4 +1,4 @@
-# Kindle E Ink Temperature for KOReader
+# Kindle E Ink Contrast for KOReader
 
 [Tiếng Việt](README.vi.md)
 
@@ -10,13 +10,13 @@ The plugin tells the display driver to use a lower temperature when refreshing t
 
 ## Install and use
 
-1. Exit KOReader. Copy `kindle-eink-temperature.koplugin` to `koreader/plugins/` on the Kindle. If you installed an earlier preview, remove the old `ppw5einktemp.koplugin` folder before reopening KOReader.
-2. Reopen KOReader, open a book and go to **Settings → Screen → Kindle E Ink Temperature**. The menu is in English.
+1. Exit KOReader. Copy `kindle-eink-contrast.koplugin` to `koreader/plugins/` on the Kindle. If you installed an earlier preview, remove `kindle-eink-temperature.koplugin` or `ppw5einktemp.koplugin` before reopening KOReader.
+2. Reopen KOReader, open a book and go to **Settings → Screen → Kindle E Ink Contrast**. The menu is in English.
 3. Select **Hold 15°C while reading**, **Hold 10°C while reading**, **Hold 5°C while reading** or **Hold 0°C while reading**. Turn a page and compare the contrast and any remaining ghosting against Auto. Select **Restore Auto** to return to the default.
 
 The plugin restores Auto when you close a book or put the Kindle to sleep, then reapplies your choice when you resume reading in the same KOReader session. When you quit and reopen KOReader, select the preset again if you want to use it.
 
-If KOReader stops responding or cannot restore Auto, restart the Kindle. To uninstall, exit KOReader and remove `kindle-eink-temperature.koplugin` from `koreader/plugins/`.
+If KOReader stops responding or cannot restore Auto, restart the Kindle. To uninstall, exit KOReader and remove `kindle-eink-contrast.koplugin` from `koreader/plugins/`.
 
 ## Compatibility
 

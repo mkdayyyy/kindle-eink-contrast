@@ -1,4 +1,4 @@
-# Kindle E Ink Temperature cho KOReader
+# Kindle E Ink Contrast cho KOReader
 
 [English](README.md)
 
@@ -10,13 +10,13 @@ Plugin gửi một giá trị nhiệt độ thấp hơn cho driver màn hình đ
 
 ## Cài đặt và sử dụng
 
-1. Thoát KOReader. Chép `kindle-eink-temperature.koplugin` vào `koreader/plugins/` trên Kindle. Nếu đã cài bản cũ, xóa thư mục `ppw5einktemp.koplugin` trước khi mở lại KOReader.
-2. Mở lại KOReader và mở một cuốn sách. Vào **bánh răng → Screen → Kindle E Ink Temperature**. Menu dùng tiếng Anh.
+1. Thoát KOReader. Chép `kindle-eink-contrast.koplugin` vào `koreader/plugins/` trên Kindle. Nếu đã cài bản cũ, xóa thư mục `kindle-eink-temperature.koplugin` hoặc `ppw5einktemp.koplugin` trước khi mở lại KOReader.
+2. Mở lại KOReader và mở một cuốn sách. Vào **bánh răng → Screen → Kindle E Ink Contrast**. Menu dùng tiếng Anh.
 3. Chọn **Hold 15°C while reading**, **Hold 10°C while reading**, **Hold 5°C while reading** hoặc **Hold 0°C while reading**. Lật trang để so độ đậm và bóng chữ với Auto. Chọn **Restore Auto** để trả về mặc định.
 
 Plugin tạm về Auto khi bạn đóng sách hoặc khi Kindle ngủ, rồi áp lại mức đã chọn khi đọc tiếp trong cùng phiên KOReader. Sau khi thoát hẳn và mở lại KOReader, bạn có thể chọn lại mức muốn dùng.
 
-Nếu KOReader treo hoặc báo không trở về Auto, hãy khởi động lại Kindle. Để gỡ, thoát KOReader rồi xóa `kindle-eink-temperature.koplugin` khỏi `koreader/plugins/`.
+Nếu KOReader treo hoặc báo không trở về Auto, hãy khởi động lại Kindle. Để gỡ, thoát KOReader rồi xóa `kindle-eink-contrast.koplugin` khỏi `koreader/plugins/`.
 
 ## Tương thích
 
